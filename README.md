@@ -1,2 +1,2 @@
 # spring
-The first project of him, a project from Spring in Action 2.!!
+The first project of him, a project from Spring in Action 2.

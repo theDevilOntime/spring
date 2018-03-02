@@ -5,7 +5,7 @@ import org.aspectj.lang.annotation.*;
 @Aspect
 public class Audience {
     /*@Before("execution(* nba.ShowPlayer.play(..))")
-    public void takeSeats() {1
+    public void takeSeats() {
 
     }
     @AfterReturning("execution(* nba.ShowPlayer.play(..))")
