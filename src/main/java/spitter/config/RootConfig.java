@@ -1,4 +1,4 @@
-package spittr.config;
+package spitter.config;
 
 import java.util.regex.Pattern;
 
@@ -9,11 +9,11 @@ import org.springframework.context.annotation.FilterType;
 import org.springframework.context.annotation.Import;
 import org.springframework.core.type.filter.RegexPatternTypeFilter;
 
-import spittr.config.RootConfig.WebPackage;
+import spitter.config.RootConfig.WebPackage;
 
 @Configuration
-@Import(DataConfig.class)
-@ComponentScan(basePackages={"spittr"}, 
+//@Import(DataConfig.class)
+@ComponentScan(basePackages={"spitter"},
     excludeFilters={
         @Filter(type=FilterType.CUSTOM, value=WebPackage.class)
     })

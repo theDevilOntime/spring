@@ -1,4 +1,4 @@
-package spittr.web;
+package spitter.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("spittr.web")
+@ComponentScan("spitter.controller")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
   @Bean
@@ -27,7 +27,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
   public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
     configurer.enable();
   }
-  
+
   @Override
   public void addResourceHandlers(ResourceHandlerRegistry registry) {
     // TODO Auto-generated method stub
